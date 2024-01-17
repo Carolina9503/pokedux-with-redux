@@ -1,0 +1,49 @@
+
+.container {
+    display: flex;
+    gap:15px;
+}
+
+
+.btn-primary{
+    all:unset;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 18px;
+    font-weight: 600;
+    background: rgb(202, 222, 52);
+    width: 180px;
+    height:30px;
+    padding: 12px 32px;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    transition: ease-in .1s;  
+    animation: 1.5s ease 10s infinite beat;
+    /* animation-duration: 2.5s; */
+    /* animation-name: beat; */
+    /* animation-iteration-count:calc(.1s) */
+    
+}
+
+.btn-primary:hover {
+    /* transform: scale(2.5); */
+    background: yellow
+}
+
+@keyframes beat {
+    from {
+        transform: scale(1, 1);
+    }
+    30% {
+        transform: scale(1, 1);
+    }
+    50%, 80% {
+        transform: scale(0.92, 0.95);
+    }
+    to {
+        transform: scale(1, 1);
+    }
+  }
+
+  
